@@ -500,10 +500,30 @@
     background: var(--glow-yellow);
     box-shadow: 0 0 12px rgba(255,230,0,0.5);
   }
+  .home-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+  }
+  .home-button img {
+      width: 80px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s;
+  }
+
+  .home-button img:hover {
+      transform: scale(1.1);
+  }
 </style>
 </head>
 <body>
-
+  
+<a href="/" class="home-button">
+    <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hello_Smiley.width-800.jpg" alt="Trang chủ">
+</a>
+  
 <h1>TETRIS</h1>
 
 <div class="game-wrapper">
