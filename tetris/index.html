@@ -534,10 +534,10 @@
       <div class="panel-label">Controls</div>
       <div class="controls-list">
         <span class="key">← →</span><span>Move</span>
-        <span class="key">Z / ↑</span><span>Rotate CW</span>
+        <span class="key">↑</span><span>Hard Drop</span>
+        <span class="key">Space / Z</span><span>Rotate CW</span>
         <span class="key">X</span><span>Rotate CCW</span>
         <span class="key">↓</span><span>Soft Drop</span>
-        <span class="key">Space</span><span>Hard Drop</span>
         <span class="key">C</span><span>Hold</span>
         <span class="key">P</span><span>Pause</span>
       </div>
@@ -557,8 +557,8 @@
       <div class="overlay-title cyan">TETRIS</div>
       <div class="overlay-sub">
         ← → — Move &nbsp; ↓ — Soft Drop<br>
-        Z / ↑ — Rotate CW &nbsp; X — Rotate CCW<br>
-        SPACE — Hard Drop &nbsp; C — Hold &nbsp; P — Pause
+        Space / Z — Rotate CW &nbsp; X — Rotate CCW<br>
+        ↑ — Hard Drop &nbsp; C — Hold &nbsp; P — Pause
       </div>
       <div class="level-picker-label">CHOOSE STARTING LEVEL</div>
       <div class="level-picker" id="levelPicker"></div>
@@ -1375,10 +1375,10 @@ function setupInput() {
         movePiece(0, 1);
         break;
       case 'ArrowUp':
-        rotatePiece(1);
+        hardDrop();
         break;
       case 'Space':
-        hardDrop();
+        rotatePiece(1);
         break;
       case 'KeyZ':
         rotatePiece(1);
