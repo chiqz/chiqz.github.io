@@ -1,2 +1,2 @@
 # chiqz.github.io
-a web to play tetris =)))
+a web to play game =)))
